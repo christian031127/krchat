@@ -1,0 +1,14 @@
+.Main {
+    grid-template-columns: 1fr 2fr;
+    overflow: hidden;
+
+    @media (max-width: 650px) {
+        &.left {
+            grid-template-columns: 1fr 0;
+        }
+
+        &.right {
+            grid-template-columns: 0 1fr;
+        }
+    }
+}
